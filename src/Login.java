@@ -3,23 +3,15 @@ public class Login {
 
 	public static void main(String[] args) {
 		
-		String n = "admin@fiap.com.br";
-		String s = "123456";
-		String t = "beatriz";
+		String emailDigitado = "admin@fiap.com.br";
+		String senhaDigitada = "123456";
+		String tokenDigitado = "beatriz";
 		
-		boolean loginOK = true;
+		boolean loginOK = validarLogin( emailDigitado, tokenDigitado, senhaDigitada);
 		
 		System.out.println(loginOK);
 		
 	}
-
-	
-	
-	
-	
-	
-	
-	
 	
 	public static boolean validarLogin(String email, String token,  String senha) {
 		boolean retorno = false;
